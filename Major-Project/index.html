@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Local-only phishing awareness training demonstration">
+  <title>Phishing Awareness Lab — Safe Demonstration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="shield">◆</span> Cyber Awareness Lab</div>
+    <span class="tag">LOCAL DEMO · NO DATA TRANSMITTED</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">NAV IOTECH · CYBERSECURITY PROJECT</p>
+      <h1>Phishing Awareness Simulation</h1>
+      <p>Explore common social-engineering warning signs in a controlled training example.</p>
+    </section>
+    <section class="notice" role="note">
+      <strong>Safety notice:</strong> This is a mock training exercise. It does not send emails, request credentials, or transmit interaction data. Use only with instructor approval and informed participant consent.
+    </section>
+    <div class="layout">
+      <section class="panel">
+        <div class="panel-head"><span>TRAINING INBOX</span><span class="muted">Example message · not sent</span></div>
+        <article class="email">
+          <div class="mail-icon">✉</div>
+          <div class="mail-meta">
+            <h2>Account notice: review required</h2>
+            <p><b>From:</b> Example Service &lt;notice@example.invalid&gt;</p>
+            <p><b>To:</b> Training participant</p>
+            <p><b>Subject:</b> Action requested — sample account notice</p>
+          </div>
+          <div class="email-body">
+            <p>Hello,</p>
+            <p>This simulated message uses urgency to encourage a quick response. In a real inbox, pause and independently verify the sender and destination before acting.</p>
+            <p class="fake-button">Review account (non-functional example)</p>
+            <p>Thank you,<br>Example Service Training Team</p>
+          </div>
+          <div class="email-actions">
+            <button id="inspectBtn" class="primary">Inspect warning signs</button>
+            <button id="reportBtn" class="secondary">I would report this</button>
+          </div>
+        </article>
+      </section>
+      <aside class="panel stats">
+        <div class="panel-head"><span>LOCAL SESSION</span><span class="live-dot">●</span></div>
+        <div class="stat"><strong id="inspectCount">0</strong><span>Warning-sign reviews</span></div>
+        <div class="stat"><strong id="reportCount">0</strong><span>Report-choice clicks</span></div>
+        <div class="stat"><strong id="learnCount">0</strong><span>Training sections opened</span></div>
+        <p class="muted small">Counters exist only in this page's memory and reset on refresh. They are not participant research results.</p>
+        <button id="resetBtn" class="reset">Reset local counters</button>
+      </aside>
+    </div>
+    <section id="learning" class="panel learning" hidden>
+      <div class="panel-head"><span>LEARNING CHECKLIST</span><span class="tag">DEFENSIVE GUIDANCE</span></div>
+      <div class="checks">
+        <div><b>1. Sender identity</b><p>Check the full sender address and compare it with a known, independently verified contact channel.</p></div>
+        <div><b>2. Urgency and pressure</b><p>Unexpected deadlines, threats, and pressure to act immediately are common social-engineering signals.</p></div>
+        <div><b>3. Links and destinations</b><p>Do not follow unexpected links. Navigate to a service using a trusted bookmark or manually entered known address.</p></div>
+        <div><b>4. Requests for secrets</b><p>Never enter passwords, one-time codes, recovery codes, or payment details into a page reached through an unsolicited message.</p></div>
+        <div><b>5. Reporting</b><p>Use the organization's approved report-phishing process or contact its IT/security team through a verified channel.</p></div>
+      </div>
+      <p class="result" id="feedback" aria-live="polite"></p>
+    </section>
+    <section class="footer-note">
+      <h2>Research and ethics protocol</h2>
+      <p>Before any participant study, obtain instructor and institutional approval, explain the exercise and data collected, obtain informed consent, allow withdrawal, minimize data, and debrief participants. This standalone page is a demonstration only; it does not provide real email delivery or recipient-level click tracking.</p>
+    </section>
+  </main>
+  <footer>Academic demonstration · Sushanth G · NavioTech Solution</footer>
+  <script src="script.js"></script>
+</body>
+</html>
